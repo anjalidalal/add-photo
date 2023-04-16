@@ -1,5 +1,5 @@
 import React from "react";
-import { signIn } from "../Firebase";
+import { signIn } from "../firebase";
 
 const Auth = () => {
   return (

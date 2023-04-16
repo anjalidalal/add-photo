@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Home from "./components/Home";
 import { useDispatch } from "react-redux";
-import { auth } from "./Firebase";
+import { auth } from "./firebase";
 import { getUser } from "./Redux/Action";
 
 const App = () => {
