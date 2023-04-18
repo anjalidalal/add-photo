@@ -6,9 +6,6 @@
   box-sizing: border-box;
   font-family: "Nunito Sans";
 }
-body {
-  background-color: #f1f5f9;
-}
 #root {
   display: flex;
   flex-direction: column;
