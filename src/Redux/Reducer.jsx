@@ -1,11 +1,11 @@
 import { nanoid } from "nanoid";
-import { GET_USER } from "./ActionType";
+import { ADD_DATA, GET_USER } from "./ActionType";
 
 const initState = {
   user: null,
   data: [
     {
-      label: "Morbi consequat lectus non orci maximus",
+      label: "Morbi consequat maximus",
       image:
         "https://images.pexels.com/photos/11255396/pexels-photo-11255396.jpeg?auto=compress&cs=tinysrgb&w=600",
       id: nanoid(),
@@ -49,6 +49,11 @@ export const Reducer = (state = initState, { type, payload }) => {
       return {
         ...state,
         user: payload,
+      };
+    case ADD_DATA:
+      return {
+        ...state,
+        data: [...state.data, payload],
       };
     default:
       return state;

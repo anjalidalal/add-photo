@@ -31,6 +31,9 @@
   border-radius: 12px;
   white-space: nowrap;
 }
+#main {
+  position: absolute;
+}
 .modal {
   width: 300px;
   background: #fff;
@@ -39,6 +42,9 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
+  z-index: 999;
+  position: relative;
+  top: 175px;
   box-shadow: 0 13px 24px 0 rgba(0, 0, 0, 0.22);
 }
 .input {
@@ -55,6 +61,28 @@
 .input:focus {
   outline: 1px solid lightskyblue;
 }
+.label {
+  position: relative;
+  top: -4rem;
+  left: 1rem;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.delete {
+  position: relative;
+  top: 3rem;
+  left: 13rem;
+  padding: 10px;
+  border: 2px solid #eb5757;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 12px;
+  text-transform: lowercase;
+  color: #eb5757;
+}
 @media (min-width: 768px) {
   .searchBar {
     width: 300px;
@@ -63,6 +91,7 @@
     padding: 10px 15px;
   }
   .modal {
-    width: 350px;
+    width: 400px;
+    padding: 20px;
   }
 }
