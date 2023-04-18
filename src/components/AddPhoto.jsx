@@ -10,7 +10,7 @@ const AddPhoto = () => {
       <Header />
       <div className="grid my-7 justify-center gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {data?.map((el) => (
-          <div className="w-72 h-96">
+          <div className="w-72 h-96" key={el.id}>
             <img src={el.image} className="w-full h-full rounded-3xl" alt="" />
             {/* <p>{el.label}</p> */}
           </div>
